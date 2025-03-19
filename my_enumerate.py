@@ -10,10 +10,16 @@ inbuilt enumerate function.
 def my_enumerate(items):
     '''Docstring'''
     result = []
-    for (i, num) in enumerate(items):
+    for i in range(len((items))):
         result.append((i, items[i]))
     return result
 
 
 ans = my_enumerate([])
+print(ans)
+
+ans = my_enumerate(['dog', 'pig', 'cow'])
+print(ans)
+
+ans = my_enumerate([10, 20, 30])
 print(ans)
