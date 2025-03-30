@@ -1,7 +1,7 @@
 '''Assignment #1'''
 
 
-def get_translations_from_file(translations): 
+def get_translations(translations): 
     """Extract translations from a string and return a list of tuples."""
     lines = translations.splitlines()
     translations_list = [tuple(line.split(',')) for line in lines]
@@ -25,11 +25,25 @@ def get_translations_from_file(translations):
     return translations_list
 
 
+def get_translations_from_file(filename):
+    infile = open(filename)
+    content = infile.read()
+    get_translations(content)
+
+filename = 'places.txt'
+for terms in get_translations_from_file(filename):
+    print(terms)
+
+
+
+
+# Game function
+
 def reo_test(string):
     '''Game function'''
 
     # Now use the get_translations function to convert the string to a list of tuples
-    translations = get_translations(string)
+    translations = get_translations_from_file(string)
     len_translations = len(translations)
 
     # Early exit function if translations were not valid
