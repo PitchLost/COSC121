@@ -1,8 +1,0 @@
-māori,english
-New Zealand,Aotearoa
-North Island,Te Ika-a-Māui
-South Island,Te Waipounamu
-Wellington,Te Whanganui a Tara
-Christchurch,Ōtautahi
-Hamilton,Kirikiriroa
-Auckland,Tāmaki Makaurau
