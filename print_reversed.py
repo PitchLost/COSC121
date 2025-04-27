@@ -5,8 +5,8 @@ then the second to last, and so on.
 '''
 
 def print_reversed(filename):
-   '''Function'''
-   infile = open(filename, 'r')
-   content = infile.read()
-
-print_reversed('Tests/data.txt')
+      '''Docstring'''
+      infile = open(filename, 'r')
+      content = infile.readlines()
+      for word in content[::-1]:
+         print(word.rstrip())
