@@ -3,10 +3,17 @@ import numpy as np
 
 '''Make a scatter plot and line plot'''
 def graph(x, y1, y2):
+
+    '''Create the scatter plot'''
     axes = plt.axes()
-    ys = np.array([y1, y2])
-    ys.reshape(-1)
-    axes.plot(x, ys)
+    y1s = np.array(y1)
+    y2s = np.array(y2)
+    xs = np.array(x)
+
+   # print('ys:', ys, 'xs:' , xs)
+    
+    plt.scatter(xs, y1s)
+    # axes.plot(xs, y2s)
     plt.show()
 
 
